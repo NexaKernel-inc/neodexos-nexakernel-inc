@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#redes">Redes Sociales</a></li>
+                <li><a href="#repositorio">Repositorio</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#registro">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1>Bienvenido a Mi Página Web</h1>
+    </section>
+
+    <section id="redes">
+        <h2>Redes Sociales</h2>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </section>
+
+    <section id="repositorio">
+        <h2>Repositorio</h2>
+        <!-- Contenido del repositorio -->
+    </section>
+
+    <section id="feedback">
+        <h2>Feedback y Sugerencias</h2>
+        <form action="https://formspree.io/f/myybqjqj" method="POST">
+            <textarea name="message" placeholder="Tu mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="registro">
+        <h2>Registro por Correo</h2>
+        <form action="https://formspree.io/f/myybqjqj" method="POST">
+            <input type="email" name="email" placeholder="Tu correo electrónico">
+            <button type="submit">Suscribirse</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mi Página Web</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
